@@ -258,7 +258,7 @@
                                 <color key="textColor" red="0.27664708609999999" green="0.20622523349999999" blue="0.001250107735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2022-03-27 21.19.47" translatesAutoresizingMaskIntoConstraints="NO" id="Vrs-hr-AaU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thinking about" translatesAutoresizingMaskIntoConstraints="NO" id="Vrs-hr-AaU">
                                 <rect key="frame" x="157" y="20" width="140" height="94"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fq-ig-jtR">
@@ -279,7 +279,7 @@
                                     <segue destination="R21-XA-dt2" kind="show" id="bdL-f9-N40"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="йода" translatesAutoresizingMaskIntoConstraints="NO" id="YP9-8j-jlO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="йода" translatesAutoresizingMaskIntoConstraints="NO" id="YP9-8j-jlO">
                                 <rect key="frame" x="15" y="433" width="130" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="mRU-6A-cuM"/>
@@ -388,13 +388,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2022-03-27 21.19.47" width="275" height="183"/>
         <image name="globe.americas.fill" catalog="system" width="128" height="121"/>
         <image name="jane" width="640" height="640"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="swift" width="900" height="900"/>
+        <image name="thinking about" width="275" height="183"/>
         <image name="valeriia" width="2316" height="2316"/>
-        <image name="йода" width="1200" height="1200"/>
+        <image name="йода" width="1200" height="1200"/>
         <image name="мистер_бин" width="328" height="307"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
