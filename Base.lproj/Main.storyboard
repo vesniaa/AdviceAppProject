@@ -341,7 +341,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Uw9-Da-5U6"/>
                     <connections>
-                        <outlet property="memsImage" destination="b4E-qv-ijP" id="ogV-wt-lrH"/>
+                        <outlet property="avatarImage" destination="b4E-qv-ijP" id="ogV-wt-lrH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYa-D6-oP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
