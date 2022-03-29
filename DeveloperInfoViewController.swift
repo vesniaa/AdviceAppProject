@@ -9,21 +9,16 @@ import UIKit
 
 class DeveloperInfoViewController: UIViewController {
 
+    @IBOutlet var developerNameLabel: UILabel!
+    @IBOutlet var developerGitHubNickLabel: UILabel!
+    @IBOutlet var developerAvatarView: UIImageView!
+    
+    var developer: Developer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        developerNameLabel.text = "Name: \(developer.name)"
+        developerGitHubNickLabel.text = "GitHub nick: \(developer.gitHubNick)"
+        developerAvatarView.image = .init(named: developer.avatar)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
