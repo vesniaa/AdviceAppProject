@@ -9,21 +9,22 @@ import UIKit
 
 class TipsChooseViewController: UIViewController {
 
+    @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var getTipsButton: UIButton!
+    
+    var name: String!
+    var tips: [Tips]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        welcomeLabel.text = """
+Ну вот ты и добрался до тайн
+мироздания, \(name ?? "")!
+"""
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let showTipsVC = segue.destination as? ShowTipsViewController else { return }
+        showTipsVC.tips = tips
     }
-    */
-
 }

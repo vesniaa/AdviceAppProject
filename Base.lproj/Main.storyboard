@@ -329,12 +329,24 @@
                                     <constraint firstAttribute="width" constant="240" id="sLd-cI-6FY"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRb-Fx-lav">
+                                <rect key="frame" x="149" y="239" width="24" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="changeAvatarPressed:" destination="R21-XA-dt2" eventType="touchUpInside" id="4Ud-nO-oQY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LhI-Hk-5TW"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="PRb-Fx-lav" firstAttribute="top" secondItem="LhI-Hk-5TW" secondAttribute="top" constant="239" id="3yW-jX-omO"/>
                             <constraint firstItem="b4E-qv-ijP" firstAttribute="top" secondItem="LhI-Hk-5TW" secondAttribute="top" constant="181" id="J3T-Q4-RzW"/>
+                            <constraint firstItem="LhI-Hk-5TW" firstAttribute="trailing" secondItem="PRb-Fx-lav" secondAttribute="trailing" constant="147" id="W3G-wa-LdJ"/>
                             <constraint firstItem="b4E-qv-ijP" firstAttribute="leading" secondItem="LhI-Hk-5TW" secondAttribute="leading" constant="40" id="WDo-jP-cPg"/>
+                            <constraint firstItem="PRb-Fx-lav" firstAttribute="leading" secondItem="LhI-Hk-5TW" secondAttribute="leading" constant="149" id="ftc-4C-oQc"/>
+                            <constraint firstItem="LhI-Hk-5TW" firstAttribute="bottom" secondItem="PRb-Fx-lav" secondAttribute="bottom" constant="295" id="lHt-fI-MAR"/>
                             <constraint firstItem="LhI-Hk-5TW" firstAttribute="bottom" secondItem="b4E-qv-ijP" secondAttribute="bottom" constant="239" id="wSa-0r-KzO"/>
                             <constraint firstItem="LhI-Hk-5TW" firstAttribute="trailing" secondItem="b4E-qv-ijP" secondAttribute="trailing" constant="40" id="y2D-Hp-J1D"/>
                         </constraints>

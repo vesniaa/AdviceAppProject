@@ -16,7 +16,7 @@ class ShowTipsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewDidLoad()
-        let hour = Calendar.current.component(.hour, from: Date())
+        let hour = Calendar.current.component(.hour, from: Date()) // изменить надо по другому
         let randomIndex = Int.random(in: 0..<tips.count)
         
         switch hour {
