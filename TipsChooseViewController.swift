@@ -18,8 +18,8 @@ class TipsChooseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = """
-Ну вот ты и добрался до тайн
-мироздания, \(name ?? "")!
+Приветствую тебя путник \(name ?? ""),
+сегодня ты познаешь силу света!
 """
     }
     

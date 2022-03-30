@@ -15,19 +15,22 @@ class ShowTipsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
-        let hour = Calendar.current.component(.hour, from: Date()) // изменить надо по другому
+    
+        let hour = Calendar.current.component(.hour, from: Date())
         let randomIndex = Int.random(in: 0..<tips.count)
         
         switch hour {
         case 3..<10:
             tipLabel.text = tips[randomIndex].morningTips
         case 10..<16:
-            tipLabel.text = tips[randomIndex].dayTimeTips
+            tipLabel.text = tips[randomIndex].dayOneTips
         case 16..<22:
-            tipLabel.text = tips[randomIndex].eveningTips
+            tipLabel.text = tips[randomIndex].eveningTwoTips
+        case 22..<28:
+            tipLabel.text = tips[randomIndex].nightThreeTips
         default:
-            tipLabel.text = tips[randomIndex].nightTips
+            tipLabel.text = tips[randomIndex].timeFourTips
         }
+        
     }
 }

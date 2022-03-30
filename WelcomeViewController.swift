@@ -23,7 +23,7 @@ class WelcomeViewController: UIViewController {
 программиста, введи свое имя!
 """
         enterButton.setTitle("Lets Go", for: .normal)
-        enterButton.backgroundColor = .gray
+        enterButton.backgroundColor = .blue
         enterButton.layer.cornerRadius = 10
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

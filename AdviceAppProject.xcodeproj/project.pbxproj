@@ -12,6 +12,12 @@
 		8C1F69D427F0B6050080EE2C /* MemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69D327F0B6050080EE2C /* MemsViewController.swift */; };
 		8C1F69D627F0B91F0080EE2C /* DevelopersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69D527F0B91F0080EE2C /* DevelopersListViewController.swift */; };
 		8C1F69D827F0B9540080EE2C /* DeveloperInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69D727F0B9540080EE2C /* DeveloperInfoViewController.swift */; };
+		8C1F69DE27F4A5AB0080EE2C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69DD27F4A5AB0080EE2C /* DataManager.swift */; };
+		8C1F69E027F4A5CB0080EE2C /* ImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69DF27F4A5CB0080EE2C /* ImageDataManager.swift */; };
+		8C1F69E227F4A5EF0080EE2C /* DevelopersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69E127F4A5EF0080EE2C /* DevelopersDataManager.swift */; };
+		8C1F69E427F4A6090080EE2C /* TipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69E327F4A6090080EE2C /* TipsModel.swift */; };
+		8C1F69E627F4A6290080EE2C /* DeveloperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69E527F4A6290080EE2C /* DeveloperModel.swift */; };
+		8C1F69E827F4A63C0080EE2C /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1F69E727F4A63C0080EE2C /* ImageModel.swift */; };
 		8C39C27F27F0854200D412BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39C27E27F0854200D412BA /* AppDelegate.swift */; };
 		8C39C28127F0854200D412BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39C28027F0854200D412BA /* SceneDelegate.swift */; };
 		8C39C28627F0854200D412BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C39C28427F0854200D412BA /* Main.storyboard */; };
@@ -26,6 +32,12 @@
 		8C1F69D327F0B6050080EE2C /* MemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemsViewController.swift; sourceTree = "<group>"; };
 		8C1F69D527F0B91F0080EE2C /* DevelopersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersListViewController.swift; sourceTree = "<group>"; };
 		8C1F69D727F0B9540080EE2C /* DeveloperInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperInfoViewController.swift; sourceTree = "<group>"; };
+		8C1F69DD27F4A5AB0080EE2C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8C1F69DF27F4A5CB0080EE2C /* ImageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataManager.swift; sourceTree = "<group>"; };
+		8C1F69E127F4A5EF0080EE2C /* DevelopersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersDataManager.swift; sourceTree = "<group>"; };
+		8C1F69E327F4A6090080EE2C /* TipsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsModel.swift; sourceTree = "<group>"; };
+		8C1F69E527F4A6290080EE2C /* DeveloperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperModel.swift; sourceTree = "<group>"; };
+		8C1F69E727F4A63C0080EE2C /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8C39C27B27F0854200D412BA /* AdviceAppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceAppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C39C27E27F0854200D412BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C39C28027F0854200D412BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,9 @@
 		8C1F69DA27F34E660080EE2C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8C1F69E327F4A6090080EE2C /* TipsModel.swift */,
+				8C1F69E527F4A6290080EE2C /* DeveloperModel.swift */,
+				8C1F69E727F4A63C0080EE2C /* ImageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +96,9 @@
 		8C1F69DC27F34E8C0080EE2C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8C1F69DD27F4A5AB0080EE2C /* DataManager.swift */,
+				8C1F69DF27F4A5CB0080EE2C /* ImageDataManager.swift */,
+				8C1F69E127F4A5EF0080EE2C /* DevelopersDataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,13 +206,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1F69D227F0B59E0080EE2C /* ShowTipsViewController.swift in Sources */,
+				8C1F69E027F4A5CB0080EE2C /* ImageDataManager.swift in Sources */,
+				8C1F69E627F4A6290080EE2C /* DeveloperModel.swift in Sources */,
 				8C1F69D827F0B9540080EE2C /* DeveloperInfoViewController.swift in Sources */,
 				8C3DA94F27F08D7300EFCD9C /* WelcomeViewController.swift in Sources */,
 				8C39C27F27F0854200D412BA /* AppDelegate.swift in Sources */,
 				8C1F69D027F0B5610080EE2C /* TipsChooseViewController.swift in Sources */,
 				8C1F69D627F0B91F0080EE2C /* DevelopersListViewController.swift in Sources */,
 				8C1F69D427F0B6050080EE2C /* MemsViewController.swift in Sources */,
+				8C1F69E227F4A5EF0080EE2C /* DevelopersDataManager.swift in Sources */,
+				8C1F69DE27F4A5AB0080EE2C /* DataManager.swift in Sources */,
 				8C39C28127F0854200D412BA /* SceneDelegate.swift in Sources */,
+				8C1F69E427F4A6090080EE2C /* TipsModel.swift in Sources */,
+				8C1F69E827F4A63C0080EE2C /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
