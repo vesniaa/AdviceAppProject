@@ -10,27 +10,33 @@ import UIKit
 class ShowTipsViewController: UIViewController {
 
     @IBOutlet var tipLabel: UILabel!
-        
+    
+    var count = 0
     var tips: [Tips]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: .lightYellow, bottomColor: .lightOrange)
+        tipLabel.text = tips[count].advice
+    }
     
-        let hour = Calendar.current.component(.hour, from: Date())
-        let randomIndex = Int.random(in: 0..<tips.count)
-        
-        switch hour {
-        case 3..<10:
-            tipLabel.text = tips[randomIndex].morningTips
-        case 10..<16:
-            tipLabel.text = tips[randomIndex].dayOneTips
-        case 16..<22:
-            tipLabel.text = tips[randomIndex].eveningTwoTips
-        case 22..<28:
-            tipLabel.text = tips[randomIndex].nightThreeTips
-        default:
-            tipLabel.text = tips[randomIndex].timeFourTips
+    @IBAction func changeAdvice() {
+        if count == 0 {
+            count += 1
+            tipLabel.text = tips[count].advice
+        } else if count == 1 {
+            count += 1
+            tipLabel.text = tips[count].advice
+        } else if count == 2 {
+            count += 1
+            tipLabel.text = tips[count].advice
+        } else if count == 3 {
+            count += 1
+            tipLabel.text = tips[count].advice
+        } else {
+            count = 0
+            tipLabel.text = tips[count].advice
         }
-        
     }
 }
+

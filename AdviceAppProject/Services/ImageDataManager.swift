@@ -11,12 +11,12 @@ class ImagesDataManager {
     
     let avatars =
     [
-        "Avatar1.jpeg",
-        "Avatar2.jpeg",
-        "Avatar3.jpeg",
-        "Avatar4.jpeg",
-        "Avatar5.jpeg",
-        "Avatar6.jpeg"
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
     ]
     
     private init() {}

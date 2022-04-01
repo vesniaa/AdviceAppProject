@@ -11,7 +11,11 @@ class DeveloperInfoViewController: UIViewController {
 
     @IBOutlet var developerNameLabel: UILabel!
     @IBOutlet var developerGitHubNickLabel: UILabel!
-    @IBOutlet var developerAvatarView: UIImageView!
+    @IBOutlet var developerAvatarView: UIImageView! {
+        didSet {
+            developerAvatarView.layer.cornerRadius = 20
+        }
+    }
     
     var developer: Developer!
     

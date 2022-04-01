@@ -9,24 +9,37 @@ import UIKit
 
 class MemsViewController: UIViewController {
     
+    var images: [Image]!
     
-    @IBOutlet var avatarImage: UIImageView!
+    @IBOutlet var avatarImage: UIImageView! {
+        didSet {
+            avatarImage.layer.cornerRadius = 20
+        }
+    }
     
-    let avatars = ["Avatar1.jpeg", "Avatar2.jpeg",
-                   "Avatar3.jpeg", "Avatar4.jpeg",
-                   "Avatar5.jpeg", "Avatar6.jpeg"]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        avatarImage.image = UIImage(named: "1")
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    @IBAction func changeAvatarPressed(_ sender: UIButton) {
-        avatarImage.image = UIImage(named: avatars[Int(arc4random_uniform(UInt32(avatars.count)))]) // рандомно присваиваем UIImageView один из аватаров из маассива avatars
+    @IBAction func changeImage() {
+        if avatarImage.image == UIImage(named: "1") {
+            avatarImage.image = UIImage(named: "2")
+        } else if avatarImage.image == UIImage(named: "2") {
+            avatarImage.image = UIImage(named: "3")
+        } else if avatarImage.image == UIImage(named: "3") {
+            avatarImage.image = UIImage(named: "4")
+        } else if avatarImage.image == UIImage(named: "4") {
+            avatarImage.image = UIImage(named: "5")
+        } else if avatarImage.image == UIImage(named: "5") {
+            avatarImage.image = UIImage(named: "6")
+        } else {
+            avatarImage.image = UIImage(named: "1")
+        }
     }
 }
-
-
-/*memsImage.image = UIImage(named: "avatars \(arc4random_uniform(5) + 1).jpeg")
-еще один вариант*/
 
 
