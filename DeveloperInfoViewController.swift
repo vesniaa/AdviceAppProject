@@ -13,7 +13,7 @@ class DeveloperInfoViewController: UIViewController {
     @IBOutlet var developerGitHubNickLabel: UILabel!
     @IBOutlet var developerAvatarView: UIImageView! {
         didSet {
-            developerAvatarView.layer.cornerRadius = 20
+            developerAvatarView.layer.cornerRadius = developerAvatarView.frame.size.height / 2
         }
     }
     
@@ -24,5 +24,6 @@ class DeveloperInfoViewController: UIViewController {
         developerNameLabel.text = "Name: \(developer.name)"
         developerGitHubNickLabel.text = "GitHub nick: \(developer.gitHubNick)"
         developerAvatarView.image = .init(named: developer.photo)
+        view.addVerticalGradientLayer(topColor: .lightYellow, bottomColor: .lightOrange)
     }
 }

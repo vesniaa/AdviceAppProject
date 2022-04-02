@@ -19,9 +19,9 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialLabel.text = """
-Чтобы получить крутой совет для
-программиста, введи свое имя!
+        initialLabel.text =
+"""
+Чтобы получить крутой совет для программиста, введи свое имя!
 """
         enterButton.setTitle("Lets Go", for: .normal)
         enterButton.backgroundColor = .blue

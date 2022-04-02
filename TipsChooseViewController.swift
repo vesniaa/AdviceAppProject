@@ -10,16 +10,21 @@ import UIKit
 class TipsChooseViewController: UIViewController {
 
     @IBOutlet var welcomeLabel: UILabel!
-    @IBOutlet var getTipsButton: UIButton!
+    @IBOutlet var getTipsButton: UIButton! {
+        didSet {
+            getTipsButton.layer.cornerRadius = 10
+        }
+    }
     
     var name: String!
     var tips: [Tips]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = """
-Приветствую тебя путник \(name ?? ""),
-сегодня ты познаешь силу света!
+        view.addVerticalGradientLayer(topColor: .lightYellow, bottomColor: .lightOrange)
+        welcomeLabel.text =
+"""
+Приветствую тебя путник \(name ?? ""), сегодня ты познаешь силу света!
 """
     }
     

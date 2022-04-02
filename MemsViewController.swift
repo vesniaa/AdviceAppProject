@@ -20,6 +20,7 @@ class MemsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         avatarImage.image = UIImage(named: "1")
+        view.addVerticalGradientLayer(topColor: .lightYellow, bottomColor: .lightOrange)
     }
     
     override func didReceiveMemoryWarning() {

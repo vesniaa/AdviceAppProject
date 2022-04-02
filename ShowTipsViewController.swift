@@ -10,6 +10,16 @@ import UIKit
 class ShowTipsViewController: UIViewController {
 
     @IBOutlet var tipLabel: UILabel!
+    @IBOutlet var changeAdviceButton: UIButton! {
+        didSet{
+            changeAdviceButton.layer.cornerRadius = 10
+        }
+    }
+    @IBOutlet var adviceView: UIView! {
+        didSet {
+            adviceView.layer.cornerRadius = 10
+        }
+    }
     
     var count = 0
     var tips: [Tips]!
@@ -18,6 +28,7 @@ class ShowTipsViewController: UIViewController {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: .lightYellow, bottomColor: .lightOrange)
         tipLabel.text = tips[count].advice
+        tipLabel.layer.cornerRadius = 10
     }
     
     @IBAction func changeAdvice() {
