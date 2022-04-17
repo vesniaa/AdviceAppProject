@@ -1,3 +1,5 @@
+<img width="1686" alt="Снимок экрана 2022-04-17 в 21 53 43" src="https://user-images.githubusercontent.com/62894376/163724516-3857dcbf-a805-4b52-8236-3e8059b59e76.png">
+
 # AdviceAppProject
 
 Командный проект
